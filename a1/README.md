@@ -22,7 +22,7 @@ python3 myvlclient.py
 
 ## Input Format
 
-- The input to the client must start with a **2-digit length prefix**, followed by a message.
+- The input sentence must start with a **2-digit length prefix**, followed by a message.
 - The prefix indicates how many characters follow it.
 - Example:  
   `10helloworld` → 10-character message `"helloworld"`
