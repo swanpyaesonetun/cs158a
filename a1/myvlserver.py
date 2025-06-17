@@ -1,44 +1,45 @@
+# myvlserver.py
 from socket import *
 
-serverPort = 12000  # Port number
+serverPort = 12000
+serverSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket.bind(('', serverPort))
+serverSocket.listen(1)
 
-serverSocket = socket(AF_INET, SOCK_STREAM)  # Create a TCP socket
+print("The server is ready to receive...")
 
-# This empty string means the server will listen on all available interfaces
-serverSocket.bind(('', serverPort))  # Bind the socket to the port
 
-serverSocket.listen(1)  # Listen for incoming connections
+def receive_full_message(conn, msg_len):
+    data = b''
+    while len(data) < msg_len:
+        chunk = conn.recv(min(64, msg_len - len(data)))
+        if not chunk:
+            break
+        data += chunk
+    return data.decode()
+
 
 while True:
-    # Accept
-    cnSocket, addr = serverSocket.accept()  # Accept a connection from a client
-    # Print the address of the connected client
-    print(f'Connection from {addr}')
+    cnSocket, addr = serverSocket.accept()
+    print(f'Connected from {addr[0]}')
 
-    # Receive
-    sentence = cnSocket.recv(64).decode()  # Receive a sentence from the client
+    # Step 1: Read 2-byte message length header
+    length_header = cnSocket.recv(2)
+    if not length_header:
+        cnSocket.close()
+        continue
 
-    length = int(sentence[:2])
-    message = sentence[2:]
+    msg_len = int(length_header.decode())
+    print(f'msg_len: {msg_len}')
 
-    # Process
-    sent_length = 0
-    i = 0
-    capSentence = ""
-    # Convert the sentence to uppercase
-    while sent_length < length:
-        capSentence += message[i].upper()
-        sent_length += 1
-        i += 1
+    # Step 2: Read actual message content
+    sentence = receive_full_message(cnSocket, msg_len)
+    print(f'processed: {sentence}')
 
-    # Send
-    # Send the modified sentence back to the client
+    # Step 3: Process and send back
+    capSentence = sentence.upper()
     cnSocket.send(capSentence.encode())
 
-    print("msg_len: ", length)
-    print("processed: ", message)
-    print("msg_len_sent: ", sent_length)
-
-    # Close
-    cnSocket.close()  # Close the connection with the client
-    print("Connection closed")
+    print(f'msg_len_sent: {len(capSentence)}')
+    cnSocket.close()
+    print('Connection closed\n')
