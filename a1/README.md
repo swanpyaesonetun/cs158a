@@ -27,7 +27,7 @@ python3 myvlclient.py
 - Example:  
   `10helloworld` → 10-character message `"helloworld"`
 
-- Valid inputs: `01a`, `10helloworld`, `99<99-char-message>`
+- Valid inputs: `01a`, `10helloworld`, `99<99-characters-message>`
 - Total length must be between 3 and 101 characters.
 
 ## Example
