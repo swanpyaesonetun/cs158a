@@ -6,9 +6,9 @@
 
 ## How to Run
 
-### Start the Server
+# Replace the IP address with your IP address.
 
-Replace the IP address with your IP address.
+# Start the Server
 
 In **Terminal 1**, run:
 
