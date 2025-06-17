@@ -8,7 +8,6 @@ serverSocket.listen(1)
 
 print("The server is ready to receive...")
 
-
 def receive_full_message(conn, msg_len):
     data = b''
     while len(data) < msg_len:

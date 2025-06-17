@@ -1,7 +1,7 @@
 # myvlclient.py
 from socket import *
 
-serverName = '10.0.0.215'  # localhost or actual server IP
+serverName = '10.1.10.154'  # localhost or actual server IP
 serverPort = 12000
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
@@ -32,7 +32,7 @@ if msg_len < 1 or msg_len > 99 or len(message) != msg_len:
     clientSocket.close()
     exit()
 
-# Send exactly what the server expects: first 2 bytes = length, then the message
+# Send the first 2 bytes = length, then the message
 clientSocket.send(sentence[:2].encode())  # length header
 clientSocket.send(message.encode())       # message body
 
