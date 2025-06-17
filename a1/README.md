@@ -1,6 +1,6 @@
 # CS158A Assignment 1
 
-### Python Version - 3.13.3
+Python Version - 3.13.3
 
 ---
 
