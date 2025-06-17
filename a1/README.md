@@ -29,3 +29,7 @@ python3 myvlclient.py
 
 - Valid inputs: `01a`, `10helloworld`, `99<99-char-message>`
 - Total length must be between 3 and 101 characters.
+
+## Example
+![Screenshot 2025-06-16 232049](https://github.com/user-attachments/assets/ba2bab52-ade6-4cad-800a-853c24b7617f)
+![Screenshot 2025-06-16 232101](https://github.com/user-attachments/assets/92bf50a9-7874-45cf-87cb-e5cc5be3b210)
