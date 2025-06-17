@@ -31,5 +31,10 @@ python3 myvlclient.py
 - Total length must be between 3 and 101 characters.
 
 ## Example
-![Screenshot 2025-06-16 232049](https://github.com/user-attachments/assets/ba2bab52-ade6-4cad-800a-853c24b7617f)
-![Screenshot 2025-06-16 232101](https://github.com/user-attachments/assets/92bf50a9-7874-45cf-87cb-e5cc5be3b210)
+
+### Input
+![Screenshot 2025-06-16 232101](https://github.com/user-attachments/assets/6e46f29a-117d-4ac5-8c93-3f7ba087e909)
+
+### Output
+![Screenshot 2025-06-16 232049](https://github.com/user-attachments/assets/004fff84-215d-4c8b-8b52-c1e32a05f62d)
+
