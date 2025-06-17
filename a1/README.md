@@ -7,9 +7,7 @@
 # How to Run
 
 ## Replace the IP address with your IP address.
-
 ![image](https://github.com/user-attachments/assets/abd532a7-5421-4bf6-bb1e-334db9a319a4)
-
 ## Start the Server
 
 In **Terminal 1**, run:
