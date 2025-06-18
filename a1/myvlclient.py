@@ -1,7 +1,7 @@
 # myvlclient.py
 from socket import *
 
-serverName = '10.1.10.154'  # IP address
+serverName = '10.0.0.215'  # IP address
 serverPort = 12000  # Port number
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
