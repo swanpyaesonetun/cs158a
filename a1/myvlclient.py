@@ -1,8 +1,8 @@
 # myvlclient.py
 from socket import *
 
-serverName = '10.1.10.154'  # localhost or actual server IP
-serverPort = 12000
+serverName = '10.1.10.154'  # IP address
+serverPort = 12000  # Port number
 
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName, serverPort))
@@ -10,7 +10,7 @@ clientSocket.connect((serverName, serverPort))
 # Input includes length + message (e.g. "10helloworld")
 sentence = input('Input lowercase sentence: ')
 
-# Input validation
+# Input length check
 if len(sentence) < 3 or len(sentence) > 101:
     print("Input must include a 2-digit length prefix and at least 1 character.")
     clientSocket.close()
@@ -25,7 +25,7 @@ except ValueError:
 
 message = sentence[2:]
 
-# Validate declared length vs actual
+# Length mismatch check
 if msg_len < 1 or msg_len > 99 or len(message) != msg_len:
     print(
         f"Declared length = {msg_len}, actual length = {len(message)}. They must match and be between 1–99.")
@@ -33,8 +33,8 @@ if msg_len < 1 or msg_len > 99 or len(message) != msg_len:
     exit()
 
 # Send the first 2 bytes = length, then the message
-clientSocket.send(sentence[:2].encode())  # length header
-clientSocket.send(message.encode())       # message body
+clientSocket.send(sentence[:2].encode())  # length
+clientSocket.send(message.encode())       # message
 
 # Receive and print result
 modifiedSentence = b''

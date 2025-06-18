@@ -8,6 +8,8 @@ serverSocket.listen(1)
 
 print("The server is ready to receive...")
 
+
+# Helper to receive full message of given length
 def receive_full_message(conn, msg_len):
     data = b''
     while len(data) < msg_len:
@@ -22,7 +24,7 @@ while True:
     cnSocket, addr = serverSocket.accept()
     print(f'Connected from {addr[0]}')
 
-    # Step 1: Read 2-byte message length header
+    # Read 2-byte message length
     length_header = cnSocket.recv(2)
     if not length_header:
         cnSocket.close()
@@ -31,11 +33,11 @@ while True:
     msg_len = int(length_header.decode())
     print(f'msg_len: {msg_len}')
 
-    # Step 2: Read actual message content
+    # Read actual message content
     sentence = receive_full_message(cnSocket, msg_len)
     print(f'processed: {sentence}')
 
-    # Step 3: Process and send back
+    # Process and send back
     capSentence = sentence.upper()
     cnSocket.send(capSentence.encode())
 
