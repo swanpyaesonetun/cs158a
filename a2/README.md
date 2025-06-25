@@ -19,9 +19,9 @@ python3 mychatclient.py
 ## Chat Format
 
 Messages from other clients will appear in this format:
-<port_number>: <message>
+**<port_number>: <message>**
 
-to leave the chat, type *exit*
+to leave the chat, type **"exit"**
 
 ## Example
 
