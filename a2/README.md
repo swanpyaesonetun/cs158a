@@ -6,6 +6,12 @@ Python Version - 3.13.3
 
 # How to Run
 
+## IP Address
+
+This assignment uses local host
+
+<img width="191" alt="Screenshot 2025-06-25 at 12 11 15 PM" src="https://github.com/user-attachments/assets/8ecf6d3d-5a2a-47e6-ab89-263389ea728c" />
+
 ## Start the Server
 
 In **a terminal**, run:
