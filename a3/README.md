@@ -1,4 +1,4 @@
-<img width="1470" alt="Screenshot 2025-07-07 at 9 59 20 PM" src="https://github.com/user-attachments/assets/eb1eff91-291a-4a67-9027-e44377deec81" /># CS158A Assignment 3
+CS158A Assignment 3
 
 Python Version - 3.13.3
 
