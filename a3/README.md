@@ -20,7 +20,9 @@ The neighbor's IP and port to connect to (client)
 
 127.0.0.1, 5002
 
-## Step 2
+## Step 2: Open Three Terminals
+
+From inside the /a3 directory:
 
 Terminal 1:
 
