@@ -1,4 +1,4 @@
-# CS158A Assignment 2
+<img width="1470" alt="Screenshot 2025-07-07 at 9 59 20 PM" src="https://github.com/user-attachments/assets/eb1eff91-291a-4a67-9027-e44377deec81" /># CS158A Assignment 3
 
 Python Version - 3.13.3
 
@@ -6,34 +6,39 @@ Python Version - 3.13.3
 
 # How to Run
 
-## Start the Server
+## Step 1: Set up config files
 
-In **a terminal**, run:
+Each configX.txt contains two lines:
 
-python3 mychatserver.py
+The node's own IP and port (server)
 
-In **seperate terminals**, run multiple clients:
+The neighbor's IP and port to connect to (client)
 
-python3 mychatclient.py
+Example config1.txt:
+127.0.0.1, 5001
+127.0.0.1, 5002
 
-## Chat Format
+## Step 2
 
-Messages from other clients will appear in this format:
+Terminal 1:
 
-**{port_number}: {message}**
+python3 myleprocess.py config1.txt log1.txt
 
-To leave the chat, type **"exit"**
+Terminal 2:
 
-## Example
+python3 myleprocess.py config2.txt log2.txt
 
-### Server
-<img width="966" alt="Screenshot 2025-06-25 at 12 02 09 PM" src="https://github.com/user-attachments/assets/815f3a96-ec14-44fc-a752-1824d1f6235e" />
+Terminal 3:
 
-### Client 1
-<img width="957" alt="Screenshot 2025-06-25 at 12 02 47 PM" src="https://github.com/user-attachments/assets/528204da-4f4b-4245-ad0a-5ac2262e1125" />
+python3 myleprocess.py config3.txt log3.txt
 
-### Client 2
-<img width="963" alt="Screenshot 2025-06-25 at 12 03 27 PM" src="https://github.com/user-attachments/assets/d761d4af-6db1-4e3e-b3e8-c91524ccf2ea" />
+## Example Output
 
-### Client 3
-<img width="962" alt="Screenshot 2025-06-25 at 12 04 04 PM" src="https://github.com/user-attachments/assets/ad216faa-77ca-4ee0-bb3f-332383bc806b" />
+### Terminal 1
+<img width="1470" alt="Screenshot 2025-07-07 at 9 59 20 PM" src="https://github.com/user-attachments/assets/b6cdc689-52a1-474f-9164-d0998820544e" />
+
+### Terminal 2
+<img width="1470" alt="Screenshot 2025-07-07 at 9 59 45 PM" src="https://github.com/user-attachments/assets/25e21226-5625-4e1b-8276-1936ede170f3" />
+
+### Terminal 3
+<img width="1470" alt="Screenshot 2025-07-07 at 10 00 06 PM" src="https://github.com/user-attachments/assets/7ff1f6dc-60ac-4edc-8777-6fde5094b4c2" />
