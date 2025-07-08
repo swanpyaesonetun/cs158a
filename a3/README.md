@@ -15,7 +15,9 @@ The node's own IP and port (server)
 The neighbor's IP and port to connect to (client)
 
 Example config1.txt:
+
 127.0.0.1, 5001
+
 127.0.0.1, 5002
 
 ## Step 2
