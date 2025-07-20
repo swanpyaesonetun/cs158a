@@ -1,6 +1,8 @@
-Received: uuid=16108625-633c-4bbb-9a25-d3c4daf0c5ba, flag=0, less, 0
-Received: uuid=bff4783d-7be6-41c4-a910-91d3c1f99112, flag=0, greater, 0
-Received: uuid=1f2d363c-a73c-41d1-9a10-01fde0356416, flag=0, less, 0
-Received: uuid=95ec7957-edff-42f1-8f4d-b38d398f7c52, flag=0, less, 0
-Received: uuid=1e85a0bf-5a0f-41b9-a8e7-c5d76b0016ce, flag=0, less, 0
-Received: uuid=e9e444c8-84dc-4227-861a-b154bad84746, flag=0, less, 0
+Received: uuid=2c0dba8b-d980-4a97-8f12-1ed34131c18e, flag=0, less, 0
+Sent: uuid=d1bafebe-f5ec-4142-8c98-a5a087596814, flag=0
+Received: uuid=d1bafebe-f5ec-4142-8c98-a5a087596814, flag=0, same, 0
+Leader is decided to d1bafebe-f5ec-4142-8c98-a5a087596814.
+Sent: uuid=d1bafebe-f5ec-4142-8c98-a5a087596814, flag=1
+Received: uuid=d1bafebe-f5ec-4142-8c98-a5a087596814, flag=1, same, 1
+Sent: uuid=d1bafebe-f5ec-4142-8c98-a5a087596814, flag=1
+Final Leader: d1bafebe-f5ec-4142-8c98-a5a087596814
