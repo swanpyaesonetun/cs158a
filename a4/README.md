@@ -8,13 +8,13 @@ Python Version - 3.13.3
 
 ## Step 1: Set up config files
 
-Each configX.txt contains two lines:
+Each config.txt contains two lines:
 
 The node's own IP and port (server)
 
 The neighbor's IP and port to connect to (client)
 
-## Example config1.txt:
+## Example config.txt:
 
 127.0.0.1, 5001
 
@@ -22,19 +22,11 @@ The neighbor's IP and port to connect to (client)
 
 ## Step 2: Open Three Terminals
 
-From inside the /a3 directory:
+Open three terminals inside respectiive node folders.
 
-Terminal 1:
+In each terminal, run:
 
-python3 myleprocess.py config1.txt log1.txt
-
-Terminal 2:
-
-python3 myleprocess.py config2.txt log2.txt
-
-Terminal 3:
-
-python3 myleprocess.py config3.txt log3.txt
+python3 myleprocess.py
 
 ## Example Output
 
