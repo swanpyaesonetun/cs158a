@@ -1,0 +1,13 @@
+Sent: uuid=28917ce5-e397-4697-a94b-305312540439, flag=0
+Received: uuid=1c7e690c-766b-432e-8cab-c75ff02b88df, flag=0
+Sent: uuid=28917ce5-e397-4697-a94b-305312540439, flag=0
+Received: uuid=1c7e690c-766b-432e-8cab-c75ff02b88df, flag=0
+Sent: uuid=28917ce5-e397-4697-a94b-305312540439, flag=0
+Received: uuid=28917ce5-e397-4697-a94b-305312540439, flag=0
+Leader is decided to be 28917ce5-e397-4697-a94b-305312540439
+Sent: uuid=28917ce5-e397-4697-a94b-305312540439, flag=1
+Received: uuid=40a8766b-8d85-4985-b5a5-a7a00be31349, flag=0, less, 0
+Ignored message
+Sent: uuid=7f412bca-6c2f-434f-b7fa-170f2cfe2c35, flag=0
+Received: uuid=7721c088-f5e9-408f-b750-71b56fd0a05d, flag=0, less, 0
+Ignored message

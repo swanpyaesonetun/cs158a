@@ -1,0 +1,8 @@
+Sent: uuid=9f747a66-06f0-4b90-878f-3865c97f085f, flag=0
+Received: uuid=590d0306-990b-42b6-9756-3f73c2c0ab57, flag=0, less, 0
+Received: uuid=9f747a66-06f0-4b90-878f-3865c97f085f, flag=0, same, 0
+Leader is decided to 9f747a66-06f0-4b90-878f-3865c97f085f.
+Sent: uuid=9f747a66-06f0-4b90-878f-3865c97f085f, flag=1
+Received: uuid=9f747a66-06f0-4b90-878f-3865c97f085f, flag=1, same, 1
+Sent: uuid=9f747a66-06f0-4b90-878f-3865c97f085f, flag=1
+Final Leader: 9f747a66-06f0-4b90-878f-3865c97f085f
