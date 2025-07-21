@@ -1,4 +1,4 @@
-# CS158A Assignment 3
+# CS158A Assignment 4
 
 Python Version - 3.13.3
 
@@ -22,11 +22,11 @@ The neighbor's IP and port to connect to (client)
 
 ## Step 2: Open Three Terminals
 
-Open three terminals inside respectiive node folders.
+Open a terminal inside each respective node folder.
 
 In each terminal, run:
 
-python3 myleprocess.py
+python myleprocess.py
 
 ## Example Output
 
