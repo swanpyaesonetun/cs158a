@@ -26,7 +26,7 @@ Open a terminal inside each respective node folder.
 
 In each terminal, run:
 
-python myleprocess.py
+python3 myleprocess.py
 
 ## Example Output
 
