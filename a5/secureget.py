@@ -1,16 +1,16 @@
 import socket
 import ssl
 
-# Target server and port
+# target server and port
 host = "www.google.com"
 port = 443
 
-# Create a TCP connection
+# create a TCP connection
 try:
     context = ssl.create_default_context()
     with socket.create_connection((host, port)) as sock:
         with context.wrap_socket(sock, server_hostname=host) as ssock:
-            # Send an HTTP GET request
+            # send an HTTP GET request
             http_request = (
                 f"GET / HTTP/1.1\r\n"
                 f"Host: {host}\r\n"
@@ -20,7 +20,7 @@ try:
             )
             ssock.sendall(http_request.encode("utf-8"))
 
-            # Read the response
+            # read the response
             response = b""
             while True:
                 data = ssock.recv(4096)
@@ -31,7 +31,7 @@ except Exception as e:
     print(f"Error occurred: {e}")
     exit(1)
 
-# Save the response to a file
+# save the response to a file
 try:
     with open("response.html", "wb") as file:
         file.write(response)
